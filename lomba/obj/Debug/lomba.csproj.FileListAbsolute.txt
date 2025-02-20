@@ -12,3 +12,17 @@ C:\Users\user\source\repos\lomba\lomba\obj\Debug\lomba.formHome.resources
 C:\Users\user\source\repos\lomba\lomba\obj\Debug\lomba.formProduk.resources
 C:\Users\user\source\repos\lomba\lomba\obj\Debug\lomba.fomrPenjualan.resources
 C:\Users\user\source\repos\lomba\lomba\obj\Debug\lomba.formPembelian.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\bin\Debug\lomba.exe.config
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\bin\Debug\lomba.exe
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\bin\Debug\lomba.pdb
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.fomrPenjualan.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.formHome.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.formPembelian.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.formProduk.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.Login.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.Properties.Resources.resources
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.exe
+C:\Users\user\OneDrive\Dokumen\LatihanDekstop\LatihanDekstopp\lomba\obj\Debug\lomba.pdb

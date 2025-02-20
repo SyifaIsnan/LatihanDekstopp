@@ -16,7 +16,7 @@ namespace lomba
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formProduk());
+            Application.Run(new formHome());
         }
     }
 }

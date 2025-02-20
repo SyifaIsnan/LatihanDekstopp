@@ -36,5 +36,11 @@ namespace lomba
             fm.Show();
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fomrPenjualan fr = new fomrPenjualan();
+            fr.Show();
+        }
     }
 }
