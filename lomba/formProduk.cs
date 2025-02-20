@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,11 +37,22 @@ namespace lomba
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            var row = dataGridView1.CurrentRow.Cells;
+            textBox1.Text = row["kd_produk"].Value.ToString();
+            textBox2.Text = row["nama_produk"].Value.ToString();
+            textBox3.Text = row["kd_kategori"].Value.ToString();
+            textBox4.Text = row["satuan"].Value.ToString();
+            textBox5.Text = row["harga_modal"].Value.ToString();
+            textBox6.Text = row["harga_jual"].Value.ToString();
+            textBox7.Text = row["stok"].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show(textBox5.Text);
+            MessageBox.Show(textBox6.Text);
+            MessageBox.Show(textBox7.Text);
             using (var koneksi = Properti.koneksi())
             {
                 try
@@ -51,7 +63,7 @@ namespace lomba
                     }
                     else
                     {
-                        SqlCommand cmd = new SqlCommand("INSERT INTO [Produk] VALUES (@kd_produk, @nama_produk, @kd_kategori , @satuan, @harga_modal, @harga_jual, @stok)", koneksi);
+                        SqlCommand cmd = new SqlCommand("INSERT INTO [Produk] (kd_produk, nama_produk, kd_kategori , satuan, harga_modal, harga_jual, stok) VALUES (@kd_produk, @nama_produk, @kd_kategori , @satuan, @harga_modal, @harga_jual, @stok)", koneksi);
                         cmd.CommandType = CommandType.Text;
                         koneksi.Open();
                         cmd.Parameters.AddWithValue("@kd_produk", textBox1.Text);
@@ -106,14 +118,15 @@ namespace lomba
                         cmd.Parameters.AddWithValue("@nama_produk", textBox2.Text);
                         cmd.Parameters.AddWithValue("@kd_kategori", textBox3.Text);
                         cmd.Parameters.AddWithValue("@satuan", textBox4.Text);
-                        cmd.Parameters.AddWithValue("@harga_modal", textBox5.Text);
-                        cmd.Parameters.AddWithValue("@harga_jual", textBox6.Text);
-                        cmd.Parameters.AddWithValue("@stok", textBox7.Text);
+                        cmd.Parameters.AddWithValue("@harga_modal", float.Parse(textBox5.Text));
+                        cmd.Parameters.AddWithValue("@harga_jual", float.Parse(textBox6.Text));
+                        cmd.Parameters.AddWithValue("@stok", float.Parse(textBox7.Text));
                         cmd.ExecuteNonQuery();
+                        koneksi.Close();
                         MessageBox.Show("Berhasil mengubah data!");
                         tampildata();
                         clear();
-                        koneksi.Close();
+                        
                     }
                 }
                 catch (Exception ex)

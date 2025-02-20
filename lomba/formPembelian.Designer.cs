@@ -119,6 +119,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "SIMPAN";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
             // 
@@ -157,7 +158,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(938, 26);
             this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "  MASUKAN KODE PRODUK DI SINI LALU TEKAN ENTER";
             // 
             // formPembelian
             // 
