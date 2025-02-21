@@ -42,5 +42,11 @@ namespace lomba
             fomrPenjualan fr = new fomrPenjualan();
             fr.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formPembelian fr = new formPembelian();
+            fr.Show();
+        }
     }
 }
